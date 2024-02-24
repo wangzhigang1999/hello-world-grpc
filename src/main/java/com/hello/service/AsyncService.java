@@ -1,10 +1,10 @@
-package com.hello.service.async;
+package com.hello.service;
 
 import com.hello.grpc.HelloRequest;
 import com.hello.grpc.HelloResponse;
 import io.grpc.stub.StreamObserver;
 
-public class Async {
+public class AsyncService {
 
     public static void asyncHello(HelloRequest request, StreamObserver<HelloResponse> responseObserver) {
         Thread.ofVirtual().start(() -> {
