@@ -1,9 +1,10 @@
 <configuration>
 
     <!-- 定义日志输出格式 -->
-    <conversionRule conversionWord="clr" converterClass="org.slf4j.helpers.MessageFormatter"/>
-    <conversionRule conversionWord="highlight" converterClass="org.slf4j.helpers.MessageFormatter"/>
-    <property name="LOG_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"/>
+    <conversionRule conversionWord="clr" converterClass="org.slf4j.helpers.MessageFormatter" />
+    <conversionRule conversionWord="highlight" converterClass="org.slf4j.helpers.MessageFormatter" />
+    <property name="LOG_PATTERN"
+        value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n" />
 
 
     <!-- 控制台输出 -->
@@ -15,7 +16,7 @@
 
     <!-- 设置根日志级别 -->
     <root level="INFO">
-        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="STDOUT" />
     </root>
 
 </configuration>
